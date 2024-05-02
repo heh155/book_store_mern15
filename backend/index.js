@@ -17,7 +17,7 @@ app.use(cors(
 ));
 
 
-mongoose.connect("mongodb://localhost:27017",{
+mongoose.connect("mongodb+srv://asutoshd08:8ndn7olMXbdGwUdi@cluster0.xnjjoct.mongodb.net/book_store?retryWrites=true&w=majority&appName=Cluster0",{
   dbName:"book_store"
 }).then(()=>console.log("db connected"))
 .catch((e)=>console.log(e))
