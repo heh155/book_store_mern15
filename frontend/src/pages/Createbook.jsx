@@ -21,7 +21,7 @@ export default function CreateBook() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:4000/books', data);
+      const response = await axios.post('https://book-store-api-woad.vercel.app/books', data);
       setLoading(false);
       navigate('/'); // Navigate on successful creation
     } catch (error) {
