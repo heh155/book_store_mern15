@@ -24,10 +24,7 @@ mongoose.connect("mongodb+srv://asutoshd08:8ndn7olMXbdGwUdi@cluster0.xnjjoct.mon
 
 
 app.get("/",(req,res)=>{
-    res.json({
-        success:true,
-        users:[]
-    })
+    res.json("hello")
 })
 
 app.use('/books',bookRoutes)
