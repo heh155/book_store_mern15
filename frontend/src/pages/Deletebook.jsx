@@ -10,7 +10,7 @@ export default function Deletebook() {
   const{id}=useParams();
   const handleDeletebook=()=>{
     setloading(true);
-    axios.delete(`http://localhost:4000/books/${id}`)
+    axios.delete(`https://book-store-api-woad.vercel.app/books/${id}`)
     .then(()=>{
       setloading(false);
       navigate('/');
