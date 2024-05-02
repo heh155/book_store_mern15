@@ -18,7 +18,7 @@ export default function Home() {
 
     const getBooks = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/books');
+            const response = await axios.get('https://book-store-api-woad.vercel.app/books');
             setBooks(response.data.data);
             setLoading(false);
         } catch (error) {
