@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.use(cors(
   {
-    origin: ["https://book-store-client-zeta.vercel.app/"],
+    origin: ["https://book-store-client-zeta.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
