@@ -13,7 +13,7 @@ export default function Editbook() {
   const {id} = useParams();
   useEffect(()=>{
     setLoading(true);
-    axios.get(`http://localhost:4000/books/${id}`)
+    axios.get(`https://book-store-api-woad.vercel.app/books/${id}`)
     .then((response)=>{
       setAuthor(response.data.author);
       setPublishYear(response.data.publishYear);
